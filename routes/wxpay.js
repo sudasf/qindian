@@ -12,7 +12,9 @@ router.post('/:id', function(req, res, next) {
 	var {params,query,body}=req
 	//console.log(req);
 	console.log(params,query,body);
-  res.render('index', { title: 'xixi' });
+  	res.json({
+  		code:1
+  	})
 });
 
 module.exports = router;
