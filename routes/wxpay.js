@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 	var {params,query,body}=req
+	console.log(req);
 	console.log(params,query,body);
   res.render('index', { title: 'xixi' });
 });
