@@ -8,9 +8,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'xixi' });
 });
 
-router.post('/', function(req, res, next) {
+router.post('/:id', function(req, res, next) {
 	var {params,query,body}=req
-	console.log(req);
+	//console.log(req);
 	console.log(params,query,body);
   res.render('index', { title: 'xixi' });
 });
