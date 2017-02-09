@@ -20,7 +20,7 @@ router.post('/:id', function(req, res, next) {
 	});
 	// 内容接收完毕
     req.on('end', function() {
-		xml2js.parseString(buf, function(err, json) {
+		parseString(buf, function(err, json) {
 			if (err) {
                 err.status = 400;
             } else {
